@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    background-color: #1a1915;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #ececec;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 15%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+.save {
+    padding: 8px 10px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #cc9b5a;
+    color: #1a1915;
+    border: none;
+    font-family: inherit;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.save:hover {
+    background-color: #d9aa6e;
+}
+
+#back {
+    padding: 8px 10px;
+    transition: 0.2s ease;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #a09e99;
+}
+
+#back:hover {
+    color: #ececec;
+}
+
+.note {
+    flex-grow: 1;
+    width: 100%;
+    padding: 3%;
+    color: #ececec;
+    outline: none;
+    box-sizing: border-box;
+    overflow-y: auto;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.note::-webkit-scrollbar {
+    width: 10px;
+}
+.note::-webkit-scrollbar-track {
+    background: #2a2825;
+}
+.note::-webkit-scrollbar-thumb {
+    background: #333129;
+    border-radius: 5px;
+}
+
+.edit {
+    padding: 8px 10px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    border-radius: 8px; 
+    display: none;
+    background-color: #cc9b5a;
+    color: #1a1915;
+    border: none;
+    font-family: inherit;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.edit:hover {
+    background-color: #d9aa6e;
+}

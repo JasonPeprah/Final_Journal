@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    background-color: #1a1915;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #ececec;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.top {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mini-top {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Header {
+    height: 40%;
+    font-weight: 500;
+}
+
+.comment {
+    height: 50%;
+    color: #a09e99;
+    font-weight: 400;
+}
+
+.button {
+    width: 60%;
+    padding: 14px 20px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 2rem;
+    background-color: #211f1c;
+    color: #ececec;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: inherit;
+}
+
+.button:hover {
+    background-color: #333129;
+}
+
+footer {
+    width: 100%;
+    height: 7%;
+    background-color: #211f1c;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px; /* Pushes the items up slightly from the bottom edge */
+}
+
+.footerbox1 {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+    color: #a09e99;
+}
+
+.footerbox2 {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+    color: #a09e99;
+}
+
+.footerbox1:active, .footerbox2:active {
+    transform: translateY(2px) scale(0.95);
+}
+
+.active {
+    color: #cc9b5a;
+}
+
+#journal {
+    font-size: 1.8rem;
+}
+
+#search {
+    font-size: 1.8rem;
+}
+
+/* Auth Section Styles */
+.auth-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-signin-btn {
+    background-color: #2a2825;
+    color: #ececec;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: background-color 0.2s;
+}
+
+.google-signin-btn:hover {
+    background-color: #333129;
+}
+
+.google-signin-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.logout-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 8px 16px;
+    background-color: #cc9b5a;
+    color: #1a1915;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.logout-btn:hover {
+    background-color: #d9aa6e;
+}

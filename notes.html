@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="notes.css?v=1">
+    <title>Notes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css?v=1">
+</head>
+<body>
+    <div id="app-section" class="main">
+        <header class="Header">
+            <i id="back" class="bi bi-arrow-left"></i>
+            <button class="save">Save</button> 
+            <button class="edit">Edit</button>
+        </header>
+        
+        <div class="note" contenteditable="true" autofocus></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="index.js?v=1"></script>
+</body>
+</html>
