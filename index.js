@@ -534,3 +534,10 @@ if (supabase) {
     supabase.auth.getSession().then(({ data: { session } }) => updateUIForAuth(session));
     supabase.auth.onAuthStateChange((_event, session) => updateUIForAuth(session));
 }
+
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker
+        .register("/sw.js")
+        .then(() => console.log("SW registered"))
+        .catch(err => console.log(err));
+}
